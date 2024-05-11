@@ -1,24 +1,25 @@
-<div class="container">
+<div class="container card mt-4 ">
 
-  <h1 class="text-center mt-5" id="titulo">Sobre mi</h1>
-  <div class="row row-cols-sm-1 row-cols-md-2" id="perfil">
+  
+  <div class="row row-cols-sm-1 row-cols-lg-2" id="perfil">
     <div class="col-sm text-center">
       <img src="assets/imgs/me.jpg" id="profile_image" class="img-fluid">
     </div>
   
     <div class="col align-content-center">
+      <h1 class="text-center mt-5" id="titulo">Sobre mi</h1>
       <div class="typewriter h1">
-        <h1>David Buenacasa Lopez </h1>
+        <h1 id="nombre">David Buenacasa Lopez </h1>
       </div>
       <div>
         <h2 class="text-center mt-3 mt-3">Desarrollador</h2>
-        <p id="descripcion">Soy un desarrollador de Software de de Aragon, Zaragoza.
+        <p id="descripcion">Soy un desarrollador de Software de de Aragón, Zaragoza.
           Cuento con un perfil tecnologico amplio, especializado en aplicaciones multiplataforma,
-          donde tambien destacan otros conocimientos relacionados con el desarrollo web y la administracion de servidores.
+          
         </p>
       </div>
       
-      <button class="button" id="masInfo" type="button" data-bs-toggle="collapse" data-bs-target="#masInfo" aria-expanded="false" aria-controls="masInfo">Mas info</button>
+      <button class="button" id="masInfo" type="button" data-bs-toggle="collapse" data-bs-target="#masInfo" aria-expanded="false" aria-controls="masInfo" >Mas info</button>
     </div>
   </div>
 
@@ -27,9 +28,9 @@
 
 <div class="container-fluid collapse" id="masInfo">
 <section class="design-section">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3">
-    <div class="col">
-      <h2 class="text-center">Experiencia</h2>
+  <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 ">
+    <div class="col card-timeline">
+      <h2 class="text-center mb-5">Experiencia</h2>
       <div class="timeline">
         <div class="timeline-empty">
         </div>
@@ -52,8 +53,8 @@
       </div>
     </div>
 
-    <div class="col align-self-center">
-      <h2 class="text-center">Formacion</h2>
+    <div class="col card-timeline">
+      <h2 class="text-center mb-5">Formacion</h2>
       <div class="timeline">
         <div class="timeline-empty">
         </div>
@@ -75,8 +76,8 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      <h2 class="text-center">Cursos</h2>
+    <div class="col card-timeline">
+      <h2 class="text-center mb-5">Cursos</h2>
       <div class="timeline">
         <div class="timeline-empty">
         </div>
@@ -103,7 +104,7 @@
 </div>
 
 
-<div class="container justify-content-center habilidades">
+<div class="container justify-content-center habilidades mt-5">
   <h2 class="text-center mb-5 mt-2">Habilidades</h2>
   <div class="flex flex-wrap w-full row row-cols-sm-2 row-cols-md-4">
 

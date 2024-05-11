@@ -8,6 +8,7 @@ import { ProyectosComponentComponent } from './proyectos-component/proyectos-com
 import { ContactoComponentComponent } from './contacto-component/contacto-component.component';
 import { RouterModule, Routes } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { FormsModule } from '@angular/forms';
 
 const appRoot:Routes=[
   {path:"", component:InicioComponentComponent},
@@ -25,6 +26,7 @@ const appRoot:Routes=[
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoot),
 
