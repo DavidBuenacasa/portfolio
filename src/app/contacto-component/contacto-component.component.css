@@ -3,26 +3,26 @@
 
 p{
     color: rgb(20, 1, 1);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-#contacto-container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-div{
-  border: black 1px solid;
-}
 
 #button-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 30px;
+
+}
+.contacto-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
 }
 
 .c-checkbox {

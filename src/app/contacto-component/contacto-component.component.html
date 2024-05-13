@@ -1,31 +1,35 @@
-<div class=" container contacto-container">
-  <p>Si desea mas informacion, deje su correo electronido y me pondre en contacto con usted lo antes posible</p>
+<div class="contacto-container container mt-5">
+  <div class="text-center">
+    <h1>Contacto</h1>
+    <p>Si desea mas informacion, deje su correo electronido y me pondre en contacto con usted lo antes posible.</p>
+  </div>
   <div id="button-container">
-    <input class="c-checkbox" type="checkbox" id="checkbox">
-    <div class="c-formContainer">
-      <form class="c-form" action="">
-        <input class="c-form__input" placeholder="Nombre" type="text" [(ngModel)]="nombre" name="nombre">
-  
-        <label class="c-form__toggle" for="checkbox" data-title="Nombre"></label>
-      </form>
+    <div>
+      <input class="c-checkbox" type="checkbox" id="checkbox">
+      <div class="c-formContainer">
+        <form class="c-form" action="">
+          <input class="c-form__input" placeholder="Nombre" type="text" [(ngModel)]="nombre" name="nombre">
+
+          <label class="c-form__toggle" for="checkbox" data-title="Nombre"></label>
+        </form>
+      </div>
     </div>
-  
-    <input class="c-checkbox" type="checkbox" id="checkbox2">
-    <div class="c-formContainer">
-      <form class="c-form" action="">
-        <input class="c-form__input" placeholder="E-mail" type="email" [(ngModel)]="email" name="email"> 
-        <label class="c-form__toggle" for="checkbox2" data-title="Nombre"></label>
-  
-      </form>
+
+    <div>
+      <input class="c-checkbox" type="checkbox" id="checkbox2">
+      <div class="c-formContainer">
+        <form class="c-form" action="">
+          <input class="c-form__input" placeholder="E-mail" type="email" [(ngModel)]="email" name="email">
+          <label class="c-form__toggle" for="checkbox2" data-title="Email"></label>
+
+        </form>
+      </div>
     </div>
-    <div class="justify-content-center d-flex mt-5">
+
+
+    <div>
       <button (click)="sendMessage();" id="enviar">Enviar</button>
     </div>
   </div>
 
 </div>
-
-
-
-
-
