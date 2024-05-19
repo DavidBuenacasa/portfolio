@@ -8,6 +8,10 @@ p{
     margin-bottom: 40px;
 }
 
+div{
+  border: 1px solid black;
+}
+
 
 #button-container{
   display: flex;
@@ -29,7 +33,7 @@ p{
   display: none;
 }
 .c-checkbox:checked + .c-formContainer .c-form {
-  width: 37.5em;
+  width: 25em;
 }
 .c-checkbox:checked + .c-formContainer .c-form__toggle {
   visibility: hidden;
@@ -67,6 +71,7 @@ p{
 .c-form__toggle {
   position: absolute;
   border-radius: 6.25em;
+  
   background-color: #ffffff;
   transition: 0.2s;
 }
@@ -79,6 +84,8 @@ p{
   box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
+  
+  
 }
 
 .c-form__toggle {
@@ -89,10 +96,12 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .c-form__toggle::before {
   font-size: 1.75em;
   content: attr(data-title);
+  
 }
 
 .c-form__input,
@@ -102,6 +111,7 @@ p{
   outline: 0;
   border-radius: 5em;
   box-sizing: border-box;
+  
 }
 
 .c-form__input,
@@ -111,16 +121,19 @@ p{
   visibility: hidden;
   transform: scale(0.7);
   transition: 0s;
+  
 }
 
 .c-form__input {
   color: #ffcccc;
   height: 100%;
-  width: 100%;
+  width: 70%;
   padding: 0 0.714em;
+  
 }
 .c-form__input::placeholder {
   color: currentColor;
+  
 }
 .c-form__input:required:valid {
   color: #ff7b73;
@@ -136,11 +149,12 @@ p{
   color: #ffaea9;
   height: 100%;
   width: auto;
+  
 }
 .c-form__buttonLabel::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 100%;
   pointer-events: none;
   cursor: pointer;

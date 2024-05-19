@@ -29,7 +29,7 @@ export class ContactoComponentComponent {
     const params = {
       username: "Notificacion de Contacto",
       avatar_url: "",
-      content: this.nombre + " quiere contactar contigo, su email es " + this.email
+      content: "@.sirdavo " + this.nombre + " quiere contactar contigo, su email es " + this.email
     }
     request.send(JSON.stringify(params));
   }

@@ -418,7 +418,7 @@ p {
   #profile_image {
     margin: auto;
     border-radius: 50%;
-    width: 50%;
+    width: 55%;
     margin-top: 5%;
     border: solid 1px bla;
   }
@@ -452,6 +452,11 @@ p {
 
   .card-timeline {
     margin-top: 50px;
+  }
+
+  .card{
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
