@@ -1,21 +1,25 @@
 
-FROM node:latest as build-step
-
-RUN mkdir -p /app
+FROM node:latest as build
 
 WORKDIR /app
 
-COPY packsage.json /app
+COPY package*.json ./
+
+RUN npm ci
 
 RUN npm install
 
-COPY . /app/
+RUN npm install -g @angular/cli
+
+COPY . .
 
 RUN npm run build --configuration=production
 
 FROM nginx:latest
 
-COPY --from=build-step /app/dist/portfolio /usr/share/nginx/html
+COPY --from=build /app/dist/portfolio /usr/share/nginx/html
+
+EXPOSE 80
 
 
 
