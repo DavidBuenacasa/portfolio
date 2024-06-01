@@ -25,6 +25,11 @@ h1{
 	font-weight: bold;
 }
 
+.web-icon{
+	width: 50px;
+}
+
+
 .proyectos{
     display: flex;
 	justify-content: center;
@@ -42,6 +47,14 @@ h1{
 	flex-wrap: wrap;
 	margin: 40px 0;
     
+}
+
+.develop{
+	display: none;
+}
+
+.project{
+	display: flex;
 }
 
 .container .card {
@@ -65,10 +78,12 @@ h1{
 	align-items: center;
 	flex-direction: column;
 	transition: 0.5s;
+	
 }
 
 .container .card:hover .content {
 	transform: translateY(-20px);
+	
 }
 
 .container .card .content .imgBx {
@@ -123,10 +138,29 @@ h1{
 	opacity: 1;
 }
 
+
+
 .container .card .sci li a {
 	color: #fff;
 	font-size: 20px;
 }
+
+@media (hover: hover) {
+
+	.card:hover{
+		.project{
+			display: none;
+			transition: 0.5s;
+		}
+		.develop{
+			display: flex;
+			transition: 0.5s;
+		}
+		
+	}
+
+
+  }
 
 /*xx-large*/
 @media only screen and (max-width: 1400px) {
